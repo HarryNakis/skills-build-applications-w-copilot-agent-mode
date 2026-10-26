@@ -7,8 +7,8 @@ node .github/scripts/validate-exercise.mjs
 node --test tests/exercise-validation.test.mjs
 npm ci --prefix octofit-tracker/backend
 npm ci --prefix octofit-tracker/frontend
-npm run build --prefix octofit-tracker/backend
-npm run build --prefix octofit-tracker/frontend
+npm ci --prefix octofit-tracker/frontend
+npm ci --prefix octofit-tracker/frontend
 ```
 
 The starter application tests are intentionally red until a learner implements each capability. Use the grading script checks and negative fixtures to verify the exercise contract.
