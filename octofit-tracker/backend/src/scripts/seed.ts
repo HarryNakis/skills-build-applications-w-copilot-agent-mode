@@ -23,7 +23,7 @@ export async function seed() {
       { name: 'Octocats' },
       { $set: { name: 'Octocats', mascot: 'Mona' } },
       { upsert: true, new: true, setDefaultsOnInsert: true },
-    ); 
+    );  
     const robocats = await Team.findOneAndUpdate(
       { name: 'Robocats' },
       { $set: { name: 'Robocats', mascot: 'Hubot' } },
